@@ -8,8 +8,8 @@ const Native = VencordNative.pluginHelpers.GlobalMute as PluginNative<typeof imp
 const settings = definePluginSettings({
     hotkey: {
         type: OptionType.STRING,
-        description: "Electron accelerator, e.g. Control+Alt+Shift+M or F13",
-        default: "Control+Alt+Shift+M",
+        description: "Electron accelerator, e.g. Control+Shift+M - https://www.electronjs.org/docs/latest/tutorial/keyboard-shortcuts",
+        default: "Control+Shift+M",
         restartNeeded: true
     }
 });
@@ -17,7 +17,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "GlobalMute",
     description: "System-wide hotkey that toggles Discord mute",
-    authors: [{ name: "Will James", id: 210797904007266304n }],
+    authors: [{ name: "willjms", id: 210797904007266304n }],
     settings,
 
     toggle() {
