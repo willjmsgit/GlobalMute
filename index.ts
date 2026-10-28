@@ -17,7 +17,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "GlobalMute",
     description: "System-wide hotkey that toggles Discord mute",
-    authors: [{ name: "me", id: 0n }],
+    authors: [{ name: "Will James", id: 210797904007266304n }],
     settings,
 
     toggle() {
